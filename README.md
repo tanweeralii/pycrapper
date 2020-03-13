@@ -6,5 +6,8 @@ A simple web scrapper in python to get the current trending hashtags on twitter.
 1. $ git clone https://github.com/tanweeralii/pycrapper
 2. $ cd pycrapper
 3. $ pip install -r requirements.txt
-4. $ python3 main.py
+````
+## To Run
+````
+$ python3 main.py
 ````
