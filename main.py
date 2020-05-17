@@ -1,11 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
-res = requests.get('https://twitter.com/i/trends')
+res = requests.get('https://twitter.com/explore/tabs/tab_1')
 soup = BeautifulSoup(res.text, 'html5lib')
 for i in soup.body:
     j = i.split('\\n')
-print("Top 10 Trendings in twitter are : \n")
+print("Top Trendings in twitter are : \n")
 for i in j:
     if 'data-trend-name=' in i:
         split1 = i.split('\"')
